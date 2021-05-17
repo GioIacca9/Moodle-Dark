@@ -10,6 +10,7 @@
 @-moz-document url-prefix("http://moodle."),
 url-prefix("https://moodle.") {
     :root{
+        --dark-black: #141414;
         --black: #1E1E1E;
         --grey: #252526;
     }
@@ -180,7 +181,7 @@ url-prefix("https://moodle.") {
     }
     .que.ddimageortext .dropbackground,
     form.mform fieldset#id_previewareaheader .dropbackground {
-        border: 1px solid #000;
+        border: 1px solid var(--dark-black);
         margin: 0 auto
     }
     form.mform fieldset#id_previewareaheader .dropbackground {
@@ -190,7 +191,7 @@ url-prefix("https://moodle.") {
         display: none;
         position: absolute;
         opacity: .5;
-        border: 1px solid #000
+        border: 1px solid var(--dark-black)
     }
     .que.ddimageortext .dropzone.active {
         display: block
@@ -206,7 +207,7 @@ url-prefix("https://moodle.") {
     .que.ddimageortext .draghome,
     .que.ddimageortext .drag,
     form.mform fieldset#id_previewareaheader .droppreview {
-        border: 1px solid #000;
+        border: 1px solid var(--dark-black);
         display: inline-block;
         font: 13px/1.231 arial, helvetica, clean, sans-serif
     }
@@ -245,7 +246,7 @@ url-prefix("https://moodle.") {
     .que.ddimageortext .drag.beingdragged,
     .que.ddimageortext .draghomes .draghome.beingdragged,
     .que.ddimageortext .droparea .draghome.beingdragged {
-        box-shadow: 3px 3px 4px #000
+        box-shadow: 3px 3px 4px var(--dark-black)
     }
     .que.ddimageortext .draghomes .draghome.beingdragged,
     .que.ddimageortext .droparea .draghome.beingdragged {
@@ -369,7 +370,7 @@ url-prefix("https://moodle.") {
     .que.ddmarker .dropbackground,
     form.mform fieldset#id_previewareaheader .dropbackground {
         margin: 0 auto;
-        border: 1px solid #000
+        border: 1px solid var(--dark-black)
     }
     form.mform fieldset#id_previewareaheader .dropbackground {
         max-width: none
@@ -387,12 +388,12 @@ url-prefix("https://moodle.") {
         margin: 0 5px;
         z-index: 3;
         background-color: #fff;
-        border: 2px solid #000;
+        border: 2px solid var(--dark-black);
         padding: 5px;
         display: inline-block;
         zoom: 1;
         border-radius: 10px;
-        color: #000;
+        color: var(--dark-black);
         opacity: .6
     }
     .que.ddmarker .droparea .marker span.markertext,
@@ -429,12 +430,12 @@ url-prefix("https://moodle.") {
     }
     .que.ddmarker .marker.beingdragged span.markertext {
         z-index: 3;
-        box-shadow: 3px 3px 4px #000
+        box-shadow: 3px 3px 4px var(--dark-black)
     }
     .que.ddmarker .dropzone .shape {
         fill: #fff;
         fill-opacity: .5;
-        stroke: #000;
+        stroke: var(--dark-black);
         stroke-width: 1
     }
     .que.ddmarker .dropzone.active .shape {
@@ -534,7 +535,7 @@ url-prefix("https://moodle.") {
     .que.ddwtos .drop.active {
         display: inline-block;
         text-align: center;
-        border: 1px solid #000;
+        border: 1px solid var(--dark-black);
         margin-bottom: 2px
     }
     .que.ddwtos .drop {
@@ -547,7 +548,7 @@ url-prefix("https://moodle.") {
         display: inline-block;
         text-align: center;
         background: transparent;
-        border: 1px solid #000;
+        border: 1px solid var(--dark-black);
         cursor: move
     }
     .que.ddwtos.qtype_ddwtos-readonly .draghome {
@@ -555,7 +556,7 @@ url-prefix("https://moodle.") {
     }
     .que.ddwtos .draghome.beingdragged {
         z-index: 3;
-        box-shadow: 3px 3px 4px #000;
+        box-shadow: 3px 3px 4px var(--dark-black);
         position: absolute
     }
     .que.ddwtos .draghome.dragplaceholder {
@@ -693,7 +694,7 @@ url-prefix("https://moodle.") {
         background: #fff3bf;
         padding: .5em;
         margin-top: 1em;
-        box-shadow: .5em .5em 1em #000
+        box-shadow: .5em .5em 1em var(--dark-black)
     }
     body.ie6 .que.multianswer .feedbackspan,
     body.ie7 .que.multianswer .feedbackspan,
@@ -2253,7 +2254,7 @@ url-prefix("https://moodle.") {
         position: relative;
         margin: 0 0 1em 0;
         padding: 0;
-        border: 1px solid #000;
+        border: 1px solid var(--dark-black);
         max-width: 100%
     }
     .forumpost .row {
@@ -2631,7 +2632,7 @@ url-prefix("https://moodle.") {
         background-color: #ddd
     }
     #page-mod-imscp-view .yui-layout-hd h2 {
-        color: #000
+        color: var(--dark-black)
     }
     .path-mod-imscp #imscp_child_list {
         margin-left: 1em;
@@ -4282,7 +4283,7 @@ url-prefix("https://moodle.") {
         line-height: 35px
     }
     .wiki_modifieduser img {
-        border: thin solid #000
+        border: thin solid var(--dark-black)
     }
     .wiki_restore_yes,
     .wiki_deletecomment_yes {
@@ -4424,7 +4425,7 @@ url-prefix("https://moodle.") {
         text-align: left
     }
     #wiki_printable_content a {
-        color: #000
+        color: var(--dark-black)
     }
     #wiki_printable_title {
         font-size: 2.2em;
@@ -4560,7 +4561,7 @@ url-prefix("https://moodle.") {
     .path-mod-workshop .submission-full .header .userdate.modified {
         padding-left: 10px;
         margin-left: 0;
-        border-left: 1px solid #000
+        border-left: 1px solid var(--dark-black)
     }
     .path-mod-workshop .submission-full .header .userdate {
         font-size: x-small;
@@ -4642,7 +4643,7 @@ url-prefix("https://moodle.") {
         background-color: #d2ebff
     }
     .path-mod-workshop .allocation-init-results .debug {
-        color: #000;
+        color: var(--dark-black);
         background-color: #ddd
     }
     .path-mod-workshop .userplan {
@@ -4662,7 +4663,7 @@ url-prefix("https://moodle.") {
     }
     .path-mod-workshop .userplan dt.active {
         vertical-align: top;
-        color: #000;
+        color: var(--dark-black);
         border: 1px solid #ddd;
         border-bottom: 0;
         border-top: 0;
@@ -4744,7 +4745,7 @@ url-prefix("https://moodle.") {
     .path-mod-workshop .userplan dd.active a:hover,
     .path-mod-workshop .userplan dd.active a:visited,
     .path-mod-workshop .userplan dd.active a:active {
-        color: #000
+        color: var(--dark-black)
     }
     .path-mod-workshop .userplan dd.lastcol {
         border-right: 0
@@ -5692,7 +5693,7 @@ url-prefix("https://moodle.") {
         vertical-align: top;
         box-sizing: border-box;
         color: #fff;
-        background-color: #000;
+        background-color: var(--dark-black);
         position: relative;
         padding: 0;
         font-size: 10px;
@@ -5795,7 +5796,7 @@ url-prefix("https://moodle.") {
     .vjs-no-js {
         padding: 20px;
         color: #fff;
-        background-color: #000;
+        background-color: var(--dark-black);
         font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
@@ -6158,7 +6159,7 @@ url-prefix("https://moodle.") {
         background-color: #fff;
         background-color: rgba(255, 255, 255, .8);
         border-radius: .3em;
-        color: #000;
+        color: var(--dark-black);
         float: right;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1em;
@@ -6186,7 +6187,7 @@ url-prefix("https://moodle.") {
         position: absolute;
         width: 1px;
         height: 100%;
-        background-color: #000;
+        background-color: var(--dark-black);
         z-index: 1
     }
     .vjs-no-flex .vjs-progress-control .vjs-mouse-display {
@@ -6205,7 +6206,7 @@ url-prefix("https://moodle.") {
     }
     .vjs-mouse-display .vjs-time-tooltip {
         color: #fff;
-        background-color: #000;
+        background-color: var(--dark-black);
         background-color: rgba(0, 0, 0, .8)
     }
     .video-js .vjs-slider {
@@ -6376,7 +6377,7 @@ url-prefix("https://moodle.") {
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: contain;
-        background-color: #000;
+        background-color: var(--dark-black);
         cursor: pointer;
         margin: 0;
         padding: 0;
@@ -6546,7 +6547,7 @@ url-prefix("https://moodle.") {
         line-height: 1;
         margin-top: -.5em;
         position: absolute;
-        text-shadow: .05em .05em .1em #000;
+        text-shadow: .05em .05em .1em var(--dark-black);
         text-align: center;
         top: 50%;
         vertical-align: middle;
@@ -7234,7 +7235,7 @@ url-prefix("https://moodle.") {
         text-align: center
     }
     .path-grade-report-grader .gradeparent .quickfeedback {
-        border: 1px dashed #000;
+        border: 1px dashed var(--dark-black);
         width: auto;
         margin: 0;
         padding: 0;
@@ -7882,7 +7883,7 @@ url-prefix("https://moodle.") {
         float: right
     }
     .gradingpanel-gradingform_rubric [aria-checked="true"] {
-        border: 1px solid #000
+        border: 1px solid var(--dark-black)
     }
     .path-admin-mnet-service-enrol .singlebutton {
         text-align: center
@@ -8070,7 +8071,7 @@ url-prefix("https://moodle.") {
         width: 60%;
         margin: auto;
         padding: 1em;
-        border: 1px solid #000;
+        border: 1px solid var(--dark-black);
         -moz-border-radius: 6px
     }
     .path-admin-tool-health dl.healthissues {
@@ -8102,7 +8103,7 @@ url-prefix("https://moodle.") {
     .path-admin-tool-health dl.healthissues dd {
         margin: 0;
         padding: 1em;
-        border: 1px solid #000
+        border: 1px solid var(--dark-black)
     }
     .path-admin-tool-health dl.healthissues dt {
         font-weight: 700;
@@ -8839,7 +8840,7 @@ url-prefix("https://moodle.") {
         padding-right: 20px;
         resize: none;
         overflow: hidden;
-        color: #000;
+        color: var(--dark-black);
         border: 2px solid #ccc;
         border-radius: 4px;
         font-size: 16px;
@@ -9344,7 +9345,7 @@ url-prefix("https://moodle.") {
         line-height: 1.5;
         color: #fff;
         text-align: left;
-        background-color: #000
+        background-color: var(--dark-black)
     }
     @media (max-width: 1200px) {
         body {
@@ -11621,8 +11622,8 @@ url-prefix("https://moodle.") {
     .btn-secondary:not(:disabled):not(.disabled).active,
     .show > .btn-secondary.dropdown-toggle {
         color: #fff;
-        background-color: #000000;
-        border-color: #000000
+        background-color: var(--dark-black);
+        border-color: var(--dark-black)
     }
     .btn-secondary:not(:disabled):not(.disabled):active:focus,
     .btn-secondary:not(:disabled):not(.disabled).active:focus,
@@ -14387,7 +14388,7 @@ url-prefix("https://moodle.") {
         z-index: 1040;
         width: 100vw;
         height: 100vh;
-        background-color: #000
+        background-color: var(--dark-black)
     }
     .modal-backdrop.fade {
         opacity: 0
@@ -14516,7 +14517,7 @@ url-prefix("https://moodle.") {
     .bs-tooltip-auto[x-placement^="top"] .arrow::before {
         top: 0;
         border-width: .4rem .4rem 0;
-        border-top-color: #000
+        border-top-color: var(--dark-black)
     }
     .bs-tooltip-right,
     .bs-tooltip-auto[x-placement^="right"] {
@@ -14532,7 +14533,7 @@ url-prefix("https://moodle.") {
     .bs-tooltip-auto[x-placement^="right"] .arrow::before {
         right: 0;
         border-width: .4rem .4rem .4rem 0;
-        border-right-color: #000
+        border-right-color: var(--dark-black)
     }
     .bs-tooltip-bottom,
     .bs-tooltip-auto[x-placement^="bottom"] {
@@ -14546,7 +14547,7 @@ url-prefix("https://moodle.") {
     .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
         bottom: 0;
         border-width: 0 .4rem .4rem;
-        border-bottom-color: #000
+        border-bottom-color: var(--dark-black)
     }
     .bs-tooltip-left,
     .bs-tooltip-auto[x-placement^="left"] {
@@ -14562,14 +14563,14 @@ url-prefix("https://moodle.") {
     .bs-tooltip-auto[x-placement^="left"] .arrow::before {
         left: 0;
         border-width: .4rem 0 .4rem .4rem;
-        border-left-color: #000
+        border-left-color: var(--dark-black)
     }
     .tooltip-inner {
         max-width: 200px;
         padding: .25rem .5rem;
         color: #fff;
         text-align: center;
-        background-color: #000
+        background-color: var(--dark-black)
     }
     .popover {
         position: absolute;
@@ -18293,7 +18294,7 @@ url-prefix("https://moodle.") {
             display: none
         }
         .badge {
-            border: 1px solid #000
+            border: 1px solid var(--dark-black)
         }
         .table {
             border-collapse: collapse!important
@@ -18630,7 +18631,7 @@ url-prefix("https://moodle.") {
         background-color: #ffee69;
         border: 1px solid #a6982b;
         border-top-color: #d4c237;
-        color: #000;
+        color: var(--dark-black);
         left: 0;
         padding: 2px 5px;
         position: relative;
@@ -19181,7 +19182,7 @@ url-prefix("https://moodle.") {
     }
     #webservice-doc-generator td {
         text-align: left;
-        border: 0 solid #000
+        border: 0 solid var(--dark-black)
     }
     .userenrolment {
         width: 100%;
@@ -23119,7 +23120,7 @@ url-prefix("https://moodle.") {
         box-shadow: 2px 2px 4px rgba(0, 0, 0, .08)
     }
     #page-my-index {
-        background-color: #000000
+        background-color: var(--dark-black)
     }
     .fp-content-center {
         height: 100%;
@@ -23648,8 +23649,8 @@ url-prefix("https://moodle.") {
         border-left: 0 solid var(--black)
     }
     .filemanager .yui3-datatable-even .yui3-datatable-cell {
-        background-color: #000000!important;
-        border-left: 0 solid #000000
+        background-color: var(--dark-black)!important;
+        border-left: 0 solid var(--dark-black)
     }
     .filemanager .fp-filename-icon.fp-hasreferences .fp-reficons1 {
         background: url(/theme/image.php/boost/theme/1613747307/fp/link_sm) no-repeat 0 0;
@@ -24722,7 +24723,7 @@ url-prefix("https://moodle.") {
         border-top-color: #a6d3da
     }
     .que .formulation .alert-link {
-        color: #000
+        color: var(--dark-black)
     }
     .que.multichoice .answer div.r0 .icon.fa-check,
     .que.multichoice .answer div.r1 .icon.fa-check,
@@ -27354,12 +27355,12 @@ url-prefix("https://moodle.") {
     }
     .btn-outline-success:focus,
     .btn-outline-success.focus {
-        outline: .2rem solid #000;
+        outline: .2rem solid var(--dark-black);
         box-shadow: inset 0 0 0 2px #343a40
     }
     .btn-outline-info:focus,
     .btn-outline-info.focus {
-        outline: .2rem solid #000;
+        outline: .2rem solid var(--dark-black);
         box-shadow: inset 0 0 0 2px #343a40
     }
     .btn-outline-warning:focus,
@@ -27379,7 +27380,7 @@ url-prefix("https://moodle.") {
     }
     .btn-outline-dark:focus,
     .btn-outline-dark.focus {
-        outline: .2rem solid #000;
+        outline: .2rem solid var(--dark-black);
         box-shadow: inset 0 0 0 2px #343a40
     }
     .gradetreebox h4 {
@@ -27891,10 +27892,10 @@ url-prefix("https://moodle.") {
     .phpinfo .e,
     .phpinfo .v,
     .phpinfo .h {
-        border: 1px solid #000;
+        border: 1px solid var(--dark-black);
         font-size: .8em;
         vertical-align: baseline;
-        color: #000;
+        color: var(--dark-black);
         background-color: #ccc
     }
     .phpinfo .e {
@@ -28270,7 +28271,7 @@ url-prefix("https://moodle.") {
         }
     }
     div[data-flexitour="backdrop"] {
-        background-color: #000;
+        background-color: var(--dark-black);
         opacity: .5;
         z-index: 1040
     }
