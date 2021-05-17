@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Moodle Dark
 @namespace      github.com/GioIacca9/Moodle-Dark
-@version        1.0.3
+@version        1.0.4
 @description    Moodle Dark Theme
 @author         GioIacca9,ale_cande11
 @homepageURL    https://github.com/GioIacca9/Moodle-Dark
@@ -13,6 +13,17 @@ url-prefix("https://moodle.") {
         --dark-black: #141414;
         --black: #1E1E1E;
         --grey: #252526;
+    }
+    /*  SCROLLBAR  */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: var(--dark-black);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--grey);
+        border-radius: 10px;
     }
     .que.calculated .answer {
         padding: .3em;
